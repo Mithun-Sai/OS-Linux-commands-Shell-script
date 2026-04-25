@@ -402,12 +402,14 @@ cat urllist.txt | tr -d ' '
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
+<img width="596" height="86" alt="image" src="https://github.com/user-attachments/assets/c5a15b10-ea6c-499c-94ee-be9268b92ed2" />
 
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
+<img width="642" height="220" alt="image" src="https://github.com/user-attachments/assets/d383fd9c-a9ba-4c1c-b4b8-8f307444f2a0" />
 
 
 mkdir backupdir
@@ -418,28 +420,36 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
+<img width="661" height="331" alt="image" src="https://github.com/user-attachments/assets/3f97841a-f8c0-46a1-9de8-0c58db1e7312" />
+
 
 
 tar -xvf backup.tar
 ## OUTPUT
+<img width="652" height="217" alt="image" src="https://github.com/user-attachments/assets/d28bc50a-1556-4723-9ee5-ca1d2ec930e5" />
+
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+ <img width="651" height="198" alt="image" src="https://github.com/user-attachments/assets/c732aa9a-e29f-4193-b7ad-7a595133bda8" />
+
+
 gunzip backup.tar.gz
 ## OUTPUT
+<img width="651" height="198" alt="image" src="https://github.com/user-attachments/assets/a9f1d6db-cc53-4988-a0b5-e8b3f05e5d77" />
 
- 
+ ls
 # Shell Script
 ```
 echo '#!/bin/sh' > my-script.sh
-echo 'echo Hello World‘; exit 0 >> my-script.sh
+echo 'echo Hello World'; exit 0 >> my-script.sh
 ```
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
+<img width="610" height="171" alt="image" src="https://github.com/user-attachments/assets/567fdb61-fe69-4641-9a25-962a82b11f81" />
 
  
 cat << stop > herecheck.txt
@@ -452,6 +462,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
+<img width="525" height="95" alt="image" src="https://github.com/user-attachments/assets/8e78c1a5-c014-4c6c-8591-e73e100f662a" />
 
 
 cat < scriptest.sh 
@@ -490,10 +501,13 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
+<img width="591" height="245" alt="image" src="https://github.com/user-attachments/assets/1544fd02-0b6b-4c85-a727-adf9365f5c8b" />
 
  
 ls file1
 ## OUTPUT
+<img width="511" height="47" alt="image" src="https://github.com/user-attachments/assets/75755b49-40d2-4800-8791-85e19e34c332" />
+
 
 echo $?
 ## OUTPUT 
@@ -539,6 +553,7 @@ echo "$val1 is less than $val2"
 fi
 ```
 ##OUTPUT
+<img width="599" height="170" alt="image" src="https://github.com/user-attachments/assets/43c777f9-ac14-434e-a487-18a310e223b4" />
 
 
 
@@ -546,10 +561,11 @@ chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
+<img width="514" height="69" alt="image" src="https://github.com/user-attachments/assets/6b8be655-f7fb-46a6-96e9-cb173ea4c09d" />
 
 
 # check file ownership
-cat < psswdperm.sh 
+cat > psswdperm.sh 
 ```bash
 \#!/bin/bash
 if [ -O /etc/passwd ]
@@ -573,6 +589,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+<img width="570" height="65" alt="image" src="https://github.com/user-attachments/assets/d90d2b7d-fefd-400c-9ad6-43a31ed9d0f7" />
 
 # check if with file location
 cat>ifnested.sh 
@@ -619,6 +636,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
+<img width="623" height="76" alt="image" src="https://github.com/user-attachments/assets/b4565e5b-164c-49ea-afc2-2d33a16bfb6e" />
 
 
 
@@ -663,6 +681,8 @@ $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
 ##OUTPUT
+<img width="568" height="69" alt="image" src="https://github.com/user-attachments/assets/61718417-e519-4ec1-9039-7c0780698c35" />
+
 
 # check if a file
 cat > ifnested.sh 
@@ -712,6 +732,8 @@ $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
 ##OUTPUT
+<img width="528" height="82" alt="image" src="https://github.com/user-attachments/assets/696d2ea8-d5dc-41bc-994a-23848f3e80c5" />
+
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -740,6 +762,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
+<img width="516" height="48" alt="image" src="https://github.com/user-attachments/assets/95110ad9-bb2a-40ea-b300-344b8ce1bbc2" />
 
 
 # testing compound comparisons
@@ -756,6 +779,8 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+<img width="499" height="45" alt="image" src="https://github.com/user-attachments/assets/9c816921-aaba-499f-b10a-fecba468fc44" />
+
 
 # using the case command
 cat >casecheck.sh 
@@ -775,7 +800,9 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+ <img width="513" height="53" alt="image" src="https://github.com/user-attachments/assets/d606ced2-0489-4ec2-a7f1-c527a2bbdb0c" />
+
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -790,7 +817,8 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
+ <img width="560" height="185" alt="image" src="https://github.com/user-attachments/assets/089e600d-9c0d-4ed6-afc8-bfad293ff7c3" />
+
  
 cat untiltest.sh 
 ```bash
@@ -801,10 +829,13 @@ do
 echo $var1
 var1=$[ $var1 - 25 ]
 done
-``` 
+```
+
 $ chmod 755 untiltest.sh
- 
- 
+./untiltesh.sh
+ ##output
+<img width="557" height="106" alt="image" src="https://github.com/user-attachments/assets/396628ed-f606-413f-96fc-c3cab3e31671" />
+
  
 cat forin1.sh 
 ```bash
@@ -817,9 +848,12 @@ done
  ```
  
 $ chmod 755 forin1.sh
- 
- 
-cat forin2.sh 
+
+ .forin1.sh
+ ##output
+ <img width="538" height="142" alt="image" src="https://github.com/user-attachments/assets/1a5910ec-36f9-41f7-bdbc-f33bc71ecb8a" />
+
+cat > forin2.sh 
 ```bash
 \#!/bin/bash
 \# another example of how not to use the for command
@@ -830,7 +864,11 @@ done
  ```
  
 $ chmod 755 forin2.sh
- 
+ ./forin2.sh
+ ##output
+ <img width="580" height="92" alt="image" src="https://github.com/user-attachments/assets/489b92ca-9899-45f7-8f6b-f5267a1ec57d" />
+
+
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -841,9 +879,10 @@ echo “word:$test”
 done
 ```
 $ chmod 755 forin2.sh
- 
 $ ./forin2.sh 
- 
+ ##output
+ <img width="522" height="120" alt="image" src="https://github.com/user-attachments/assets/88b161f3-0499-4401-8a8e-b31cecd9cd53" />
+
 cat forin3.sh 
 ```bash
 \#!/bin/bash
@@ -853,9 +892,13 @@ do
 echo "word:$test"
 done
 ```
+$ chmod 755 forin3.sh
+
 $ ./forin3.sh 
- 
-cat forin1.sh 
+ ##output
+ <img width="564" height="139" alt="image" src="https://github.com/user-attachments/assets/37d991ed-47b8-4cbb-91a9-093d52a84e10" />
+
+cat > forin1.sh 
 ```bash
 #!/bin/bash
 # basic for command
@@ -865,6 +908,9 @@ echo The next state is $test
 done
 ```
 $ chmod 755 forin1.sh
+./forin1.sh
+##output
+<img width="520" height="119" alt="image" src="https://github.com/user-attachments/assets/81e312ea-e466-43ea-bd9d-1d9491e66c14" />
 
 ## OUTPUT
 cat forinfile.sh 
@@ -874,7 +920,7 @@ cat forinfile.sh
 file="cities"
 for state in `cat $file`
 do
-echo "Visit beautiful $file“
+echo "Visit beautiful $file"
 done
 ```
 $ chmod 777 forinfile.sh
@@ -888,6 +934,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
+<img width="556" height="137" alt="image" src="https://github.com/user-attachments/assets/86c42693-2ef7-4cb7-90a0-c6f51659f191" />
 
 
 cat forctype.sh 
